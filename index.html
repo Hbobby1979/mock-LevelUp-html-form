@@ -2,140 +2,179 @@
 <html>
 <head>
     <style>
-        /* Style for the header */
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
         .header {
-            background-color: #0056b3; /* Match the blue background */
+            background-color: #0056b3;
             color: white;
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Space between logo and text */
+            justify-content: space-between;
             padding: 10px 20px;
         }
 
         .header img {
             height: 50px; /* Adjust the height of the logo */
-            margin-right: 15px; /* Add spacing between logo and text */
+            margin-right: 15px;
         }
 
         .header-title {
             font-size: 18px;
             font-weight: bold;
         }
+
+        /* Form Container */
+        .form-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Flex Layout for Inline Fields */
+        .form-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-group > div {
+            flex: 1;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox-group input {
+            width: auto;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <div class="header">
-        <img src="image.png" alt="Logo"> <!-- Replace 'image.png' with the actual file name and path -->
+        <img src="image.png" alt="VillageUp Logo">
         <div class="header-title">LevelUp by VillageUp - Register and Apply to Attend</div>
     </div>
 
-<div class="container">
-    <h2>Registration Form</h2>
-    <form id="registrationForm">
-        <label for="title">Title:</label>
-        <select id="title" name="title" required>
-            <option value="Mr">Mr</option>
-            <option value="Mrs">Mrs</option>
-            <option value="Ms">Ms</option>
-            <option value="Dr">Dr</option>
-            <option value="Professor">Professor</option>
-        </select>
-
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
-
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender" required>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-        </select>
-
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required>
-
-        <label for="nationality">Nationality:</label>
-        <input type="text" id="nationality" name="nationality" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="education">Education Level:</label>
-        <select id="education" name="education">
-            <option value="">Select an answer</option>
-            <option value="highschool">High School</option>
-            <option value="certificate">Certificate</option>
-            <option value="diploma">Diploma</option>
-            <option value="degree">Degree</option>
-        </select>
-
-        <label for="workExperience">Work Experience:</label>
-        <textarea id="workExperience" name="workExperience" rows="4" placeholder="Describe your work experience..."></textarea>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        /* Styling for the main label */
-        label[for="gwfCourses"] {
-            font-size: 20px; /* Adjust the font size as needed */
-            font-weight: bold; /* Optional: Make it bold */
-            margin-bottom: 10px; /* Optional: Add spacing below the label */
-            display: block; /* Ensure the label spans the full width */
-        }
-
-        /* Container for the checkboxes and labels */
-        #gwfCourses {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #gwfCourses div {
-            display: flex;
-            justify-content: space-between; /* Align label to the left and checkbox to the right */
-            align-items: center; /* Center items vertically */
-            margin-bottom: 5px; /* Add spacing between rows */
-        }
-
-        #gwfCourses label {
-            margin-right: 10px; /* Space between label and checkbox */
-        }
-    </style>
-</head>
-<body>
-    <form>
-        <label for="gwfCourses">Good Work Foundation Courses Completed:</label>
-        <div id="gwfCourses">
-            <div>
-                <label for="openLearning">Open Learning Academy</label>
-                <input type="checkbox" id="openLearning" name="gwfCourses" value="Open Learning Academy">
+    <!-- Form Section -->
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <!-- Title and Full Name -->
+            <div class="form-group">
+                <div>
+                    <label for="title">Title:</label>
+                    <select id="title" name="title">
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="miss">Miss</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName">
+                </div>
             </div>
-            <div>
-                <label for="bridgingYear">Bridging Year Academy</label>
-                <input type="checkbox" id="bridgingYear" name="gwfCourses" value="Bridging Year Academy">
+
+            <!-- Gender, Date of Birth, Nationality -->
+            <div class="form-group">
+                <div>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div>
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality">
+                </div>
             </div>
-            <div>
-                <label for="itAcademy">IT Academy</label>
-                <input type="checkbox" id="itAcademy" name="gwfCourses" value="IT Academy">
+
+            <!-- Email and Phone -->
+            <div class="form-group">
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
             </div>
-            <div>
-                <label for="conservation">Conservation Academy</label>
-                <input type="checkbox" id="conservation" name="gwfCourses" value="Conservation Academy">
+
+            <!-- Education Level and Work Experience -->
+            <div class="section">
+                <div class="form-group">
+                    <div>
+                        <label for="educationLevel">Education Level:</label>
+                        <select id="educationLevel" name="educationLevel">
+                            <option value="">Select an answer</option>
+                            <option value="highSchool">High School</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="workExperience">Work Experience:</label>
+                        <textarea id="workExperience" name="workExperience" rows="3" placeholder="Describe your work experience..."></textarea>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="hospitality">Hospitality Academy</label>
-                <input type="checkbox" id="hospitality" name="gwfCourses" value="Hospitality Academy">
+
+            <!-- Courses -->
+            <div class="section">
+                <label>Good Work Foundation Courses Completed:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="courses" value="Open Learning Academy"> Open Learning Academy</label>
+                    <label><input type="checkbox" name="courses" value="Bridging Year Academy"> Bridging Year Academy</label>
+                    <label><input type="checkbox" name="courses" value="IT Academy"> IT Academy</label>
+                    <label><input type="checkbox" name="courses" value="Conservation Academy"> Conservation Academy</label>
+                    <label><input type="checkbox" name="courses" value="Hospitality Academy"> Hospitality Academy</label>
+                    <label><input type="checkbox" name="courses" value="Facilitator Academy"> Facilitator Academy</label>
+                </div>
             </div>
-            <div>
-                <label for="facilitator">Facilitator Academy</label>
-                <input type="checkbox" id="facilitator" name="gwfCourses" value="Facilitator Academy">
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
 
