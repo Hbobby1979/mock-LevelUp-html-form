@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillageUp Open Day Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00408f;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>VillageUp Open Day</h1>
+    <p>LevelUp by VillageUp - Register and Apply to Attend</p>
+</header>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="title">Title:</label>
+        <select id="title" name="title" required>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+            <option value="Professor">Professor</option>
+        </select>
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="education">Education Level:</label>
+        <select id="education" name="education">
+            <option value="">Select an answer</option>
+            <option value="highschool">High School</option>
+            <option value="certificate">Certificate</option>
+            <option value="diploma">Diploma</option>
+            <option value="degree">Degree</option>
+        </select>
+
+        <label for="workExperience">Work Experience:</label>
+        <textarea id="workExperience" name="workExperience" rows="4" placeholder="Describe your work experience..."></textarea>
+
+        <label for="gwfCourses">Good Work Foundation Courses Completed:</label>
+        <div id="gwfCourses">
+            <input type="checkbox" id="openLearning" name="gwfCourses" value="Open Learning Academy">
+            <label for="openLearning">Open Learning Academy</label><br>
+            <input type="checkbox" id="bridgingYear" name="gwfCourses" value="Bridging Year Academy">
+            <label for="bridgingYear">Bridging Year Academy</label><br>
+            <input type="checkbox" id="itAcademy" name="gwfCourses" value="IT Academy">
+            <label for="itAcademy">IT Academy</label><br>
+            <input type="checkbox" id="conservation" name="gwfCourses" value="Conservation Academy">
+            <label for="conservation">Conservation Academy</label><br>
+            <input type="checkbox" id="hospitality" name="gwfCourses" value="Hospitality Academy">
+            <label for="hospitality">Hospitality Academy</label><br>
+            <input type="checkbox" id="facilitator" name="gwfCourses" value="Facilitator Academy">
+            <label for="facilitator">Facilitator Academy</label><br>
+        </div>
+
+        <h3>Cognitive Questionnaire</h3>
+        <p>Answer the following 10 multiple-choice questions:</p>
+        <label for="q1">1. What is the next number in the sequence: 2, 4, 6, 8, ...?</label>
+        <select id="q1" name="q1" required>
+            <option value="">Select an answer</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+        </select>
+
+        <label for="q2">2. If a train is moving at 60 mph, how far will it travel in 2 hours?</label>
+        <select id="q2" name="q2" required>
+            <option value="">Select an answer</option>
+            <option value="60 miles">60 miles</option>
+            <option value="120 miles">120 miles</option>
+            <option value="180 miles">180 miles</option>
+        </select>
+
+        <label for="q3">3. What is 15% of 200?</label>
+        <select id="q3" name="q3" required>
+            <option value="">Select an answer</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="15">15</option>
+        </select>
+
+        <label for="q4">4. Solve: 8 + (3 × 4).</label>
+        <select id="q4" name="q4" required>
+            <option value="">Select an answer</option>
+            <option value="20">20</option>
+            <option value="24">24</option>
+            <option value="32">32</option>
+        </select>
+
+        <label for="q5">5. What is the square root of 144?</label>
+        <select id="q5" name="q5" required>
+            <option value="">Select an answer</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+        </select>
+
+        <label for="q6">6. A shop sells 3 apples for $1. How much would 12 apples cost?</label>
+        <select id="q6" name="q6" required>
+            <option value="">Select an answer</option>
+            <option value="$3">$3</option>
+            <option value="$4">$4</option>
+            <option value="$5">$5</option>
+        </select>
+
+        <label for="q7">7. How many minutes are there in 1.5 hours?</label>
+        <select id="q7" name="q7" required>
+            <option value="">Select an answer</option>
+            <option value="60 minutes">60 minutes</option>
+            <option value="90 minutes">90 minutes</option>
+            <option value="120 minutes">120 minutes</option>
+        </select>
+
+        <label for="q8">8. If x = 3, what is the value of 2x + 5?</label>
+        <select id="q8" name="q8" required>
+            <option value="">Select an answer</option>
+            <option value="8">8</option>
+            <option value="11">11</option>
+            <option value="9">9</option>
+        </select>
+
+        <label for="q9">9. What is 7 multiplied by 9?</label>
+        <select id="q9" name="q9" required>
+            <option value="">Select an answer</option>
+            <option value="56">56</option>
+            <option value="63">63</option>
+            <option value="72">72</option>
+        </select>
+
+        <label for="q10">10. A book costs $12.50, and you have $20. How much change will you get?</label>
+        <select id="q10" name="q10" required>
+            <option value="">Select an answer</option>
+            <option value="$7.50">$7.50</option>
+            <option value="$6.50">$6.50</option>
+            <option value="$8.00">$8.00</option>
+        </select>
+
+        <h3>Traits Questionnaire</h3>
+        <p>Answer the following 30 questions to assess your strengths and preferences:</p>
+
+        <label for="traits1">1. Do you enjoy convincing others to see your point of view?</label>
+        <select id="traits1" name="traits1" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits2">2. Do you prefer working independently or as part of a team?</label>
+        <select id="traits2" name="traits2" required>
+            <option value="">Select an answer</option>
+            <option value="Independently">Independently</option>
+            <option value="Team">Team</option>
+            <option value="Both">Both</option>
+        </select>
+
+        <label for="traits3">3. How do you approach solving problems?</label>
+        <select id="traits3" name="traits3" required>
+            <option value="">Select an answer</option>
+            <option value="Analytical">Analytical</option>
+            <option value="Creative">Creative</option>
+            <option value="Practical">Practical</option>
+        </select>
+
+        <label for="traits4">4. Do you thrive in fast-paced environments?</label>
+        <select id="traits4" name="traits4" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits5">5. Are you comfortable following strict guidelines and procedures?</label>
+        <select id="traits5" name="traits5" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits6">6. Do you enjoy networking and building relationships?</label>
+        <select id="traits6" name="traits6" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits7">7. Do you often find innovative solutions to problems?</label>
+        <select id="traits7" name="traits7" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits8">8. Are you comfortable handling constructive criticism?</label>
+        <select id="traits8" name="traits8" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits9">9. Do you consider yourself detail-oriented?</label>
+        <select id="traits9" name="traits9" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits10">10. Do you enjoy helping others solve problems?</label>
+        <select id="traits10" name="traits10" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits11">11. Are you comfortable speaking in front of groups?</label>
+        <select id="traits11" name="traits11" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits12">12. Do you enjoy working under pressure?</label>
+        <select id="traits12" name="traits12" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits13">13. Do you prefer structured tasks or flexibility?</label>
+        <select id="traits13" name="traits13" required>
+            <option value="">Select an answer</option>
+            <option value="Structured">Structured</option>
+            <option value="Flexible">Flexible</option>
+            <option value="Both">Both</option>
+        </select>
+
+        <label for="traits14">14. Are you a good listener?</label>
+        <select id="traits14" name="traits14" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits15">15. Do you enjoy taking initiative?</label>
+        <select id="traits15" name="traits15" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits16">16. Are you comfortable multitasking?</label>
+        <select id="traits16" name="traits16" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits17">17. Do you enjoy learning new skills on the job?</label>
+        <select id="traits17" name="traits17" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits18">18. Are you good at time management?</label>
+        <select id="traits18" name="traits18" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits19">19. Do you feel comfortable making quick decisions?</label>
+        <select id="traits19" name="traits19" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits20">20. Are you comfortable working with data or numbers?</label>
+        <select id="traits20" name="traits20" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits21">21. Do you enjoy building relationships with customers?</label>
+        <select id="traits21" name="traits21" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits22">22. Are you comfortable working long hours if necessary?</label>
+        <select id="traits22" name="traits22" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits23">23. Do you adapt well to change?</label>
+        <select id="traits23" name="traits23" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits24">24. Are you confident in your communication skills?</label>
+        <select id="traits24" name="traits24" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits25">25. Do you enjoy setting and achieving goals?</label>
+        <select id="traits25" name="traits25" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits26">26. Are you comfortable using technology in your work?</label>
+        <select id="traits26" name="traits26" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits27">27. Do you enjoy creative problem-solving?</label>
+        <select id="traits27" name="traits27" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits28">28. Do you take feedback positively?</label>
+        <select id="traits28" name="traits28" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits29">29. Are you good at managing conflicts?</label>
+        <select id="traits29" name="traits29" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <label for="traits30">30. Do you enjoy exploring entrepreneurial opportunities?</label>
+        <select id="traits30" name="traits30" required>
+            <option value="">Select an answer</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 VillageUp. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+
+        // Process cognitive questionnaire results (example: sum of correct answers)
+        const cognitiveResults = {
+            totalQuestions: 10,
+            correctAnswers: 0
+        };
+        for (let i = 1; i <= cognitiveResults.totalQuestions; i++) {
+            if (formData.get(`q${i}`) === "correctAnswer") {
+                cognitiveResults.correctAnswers++;
+            }
+        }
+
+        // Example traits questionnaire analysis
+        const traitsResult = {
+            mostLikelyDiscipline: "Service", // Placeholder example
+            reasons: "Based on your responses, you exhibit strong customer service skills."
+        };
+
+        // Generate basic CV
+        const basicCV = {
+            name: formData.get("fullName"),
+            title: formData.get("title"),
+            gender: formData.get("gender"),
+            dob: formData.get("dob"),
+            nationality: formData.get("nationality"),
+            email: formData.get("email"),
+            phone: formData.get("phone"),
+            education: formData.get("education"),
+            workExperience: formData.get("workExperience"),
+            gwfCourses: formData.getAll("gwfCourses")
+        };
+
+        // Display results
+        alert(`Cognitive Assessment: ${cognitiveResults.correctAnswers} / ${cognitiveResults.totalQuestions} correct\n\n` +
+              `Most Likely Discipline: ${traitsResult.mostLikelyDiscipline}\nReason: ${traitsResult.reasons}\n\n` +
+              `Generated CV:\n${JSON.stringify(basicCV, null, 2)}`);
+
+        event.target.reset();
+    });
+</script>
+
+</body>
+</html>
