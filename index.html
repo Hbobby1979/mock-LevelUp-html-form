@@ -113,21 +113,56 @@
         <label for="workExperience">Work Experience:</label>
         <textarea id="workExperience" name="workExperience" rows="4" placeholder="Describe your work experience..."></textarea>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style to align checkbox and label side by side with margin */
+        #gwfCourses label {
+            margin-left: 10px; /* Adds space between the checkbox and the label */
+        }
+
+        #gwfCourses input[type="checkbox"] {
+            margin-right: 5px; /* Adds space between the checkbox and the label */
+        }
+
+        #gwfCourses div {
+            margin-bottom: 5px; /* Adds spacing between each checkbox-label pair */
+        }
+    </style>
+</head>
+<body>
+    <form>
         <label for="gwfCourses">Good Work Foundation Courses Completed:</label>
         <div id="gwfCourses">
-            <input type="checkbox" id="openLearning" name="gwfCourses" value="Open Learning Academy">
-            <label for="openLearning">Open Learning Academy</label><br>
-            <input type="checkbox" id="bridgingYear" name="gwfCourses" value="Bridging Year Academy">
-            <label for="bridgingYear">Bridging Year Academy</label><br>
-            <input type="checkbox" id="itAcademy" name="gwfCourses" value="IT Academy">
-            <label for="itAcademy">IT Academy</label><br>
-            <input type="checkbox" id="conservation" name="gwfCourses" value="Conservation Academy">
-            <label for="conservation">Conservation Academy</label><br>
-            <input type="checkbox" id="hospitality" name="gwfCourses" value="Hospitality Academy">
-            <label for="hospitality">Hospitality Academy</label><br>
-            <input type="checkbox" id="facilitator" name="gwfCourses" value="Facilitator Academy">
-            <label for="facilitator">Facilitator Academy</label><br>
+            <div>
+                <input type="checkbox" id="openLearning" name="gwfCourses" value="Open Learning Academy">
+                <label for="openLearning">Open Learning Academy</label>
+            </div>
+            <div>
+                <input type="checkbox" id="bridgingYear" name="gwfCourses" value="Bridging Year Academy">
+                <label for="bridgingYear">Bridging Year Academy</label>
+            </div>
+            <div>
+                <input type="checkbox" id="itAcademy" name="gwfCourses" value="IT Academy">
+                <label for="itAcademy">IT Academy</label>
+            </div>
+            <div>
+                <input type="checkbox" id="conservation" name="gwfCourses" value="Conservation Academy">
+                <label for="conservation">Conservation Academy</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hospitality" name="gwfCourses" value="Hospitality Academy">
+                <label for="hospitality">Hospitality Academy</label>
+            </div>
+            <div>
+                <input type="checkbox" id="facilitator" name="gwfCourses" value="Facilitator Academy">
+                <label for="facilitator">Facilitator Academy</label>
+            </div>
         </div>
+    </form>
+</body>
+</html>
 
         <h3>Cognitive Questionnaire</h3>
         <p>Answer the following 10 multiple-choice questions:</p>
