@@ -82,6 +82,33 @@
         .checkbox-group input {
             width: auto;
         }
+
+        /* Submit Button Styling */
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            background-color: #0056b3; /* Primary color */
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #003d80; /* Darker shade on hover */
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        button[type="submit"]:active {
+            background-color: #002952; /* Even darker shade when clicked */
+            transform: scale(0.98); /* Slight shrink effect */
+        }
     </style>
 </head>
 <body>
