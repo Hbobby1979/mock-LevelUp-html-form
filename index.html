@@ -1,71 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VillageUp Open Day Registration</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background: #0056b3;
+        /* Style for the header */
+        .header {
+            background-color: #0056b3; /* Match the blue background */
             color: white;
-            padding: 1rem 0;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space between logo and text */
+            padding: 10px 20px;
         }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+
+        .header img {
+            height: 50px; /* Adjust the height of the logo */
+            margin-right: 15px; /* Add spacing between logo and text */
         }
-        h1, h2, h3 {
-            color: #0056b3;
-        }
-        label {
-            display: block;
-            margin-top: 1rem;
+
+        .header-title {
+            font-size: 18px;
             font-weight: bold;
-        }
-        input, select, textarea, button {
-            width: 100%;
-            padding: 0.8rem;
-            margin-top: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        button {
-            background: #0056b3;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #00408f;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-            background: #0056b3;
-            color: white;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>VillageUp Open Day</h1>
-    <p>LevelUp by VillageUp - Register and Apply to Attend</p>
-</header>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="image.png" alt="Logo"> <!-- Replace 'image.png' with the actual file name and path -->
+        <div class="header-title">LevelUp by VillageUp - Register and Apply to Attend</div>
+    </div>
 
 <div class="container">
     <h2>Registration Form</h2>
