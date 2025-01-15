@@ -117,7 +117,15 @@
 <html>
 <head>
     <style>
-        /* Container for each checkbox and label */
+        /* Styling for the main label */
+        label[for="gwfCourses"] {
+            font-size: 20px; /* Adjust the font size as needed */
+            font-weight: bold; /* Optional: Make it bold */
+            margin-bottom: 10px; /* Optional: Add spacing below the label */
+            display: block; /* Ensure the label spans the full width */
+        }
+
+        /* Container for the checkboxes and labels */
         #gwfCourses {
             display: flex;
             flex-direction: column;
@@ -127,7 +135,7 @@
             display: flex;
             justify-content: space-between; /* Align label to the left and checkbox to the right */
             align-items: center; /* Center items vertically */
-            margin-bottom: 5px; /* Add space between rows */
+            margin-bottom: 5px; /* Add spacing between rows */
         }
 
         #gwfCourses label {
