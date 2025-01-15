@@ -117,17 +117,24 @@
 <html>
 <head>
     <style>
-        /* Style to align checkbox and label side by side with margin */
+        /* Align checkboxes and labels side by side */
         #gwfCourses label {
-            margin-left: 10px; /* Adds space between the checkbox and the label */
+            margin-left: 5px; /* Adds space between the checkbox and label */
         }
 
         #gwfCourses input[type="checkbox"] {
-            margin-right: 5px; /* Adds space between the checkbox and the label */
+            margin-right: 10px; /* Adds space between the checkbox and label */
+        }
+
+        #gwfCourses {
+            display: flex;
+            flex-direction: column;
         }
 
         #gwfCourses div {
-            margin-bottom: 5px; /* Adds spacing between each checkbox-label pair */
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px; /* Adds spacing between rows */
         }
     </style>
 </head>
