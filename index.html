@@ -117,15 +117,7 @@
 <html>
 <head>
     <style>
-        /* Align checkboxes and labels side by side */
-        #gwfCourses label {
-            margin-left: 5px; /* Adds space between the checkbox and label */
-        }
-
-        #gwfCourses input[type="checkbox"] {
-            margin-right: 10px; /* Adds space between the checkbox and label */
-        }
-
+        /* Container for each checkbox and label */
         #gwfCourses {
             display: flex;
             flex-direction: column;
@@ -133,8 +125,13 @@
 
         #gwfCourses div {
             display: flex;
-            align-items: center;
-            margin-bottom: 5px; /* Adds spacing between rows */
+            justify-content: space-between; /* Align label to the left and checkbox to the right */
+            align-items: center; /* Center items vertically */
+            margin-bottom: 5px; /* Add space between rows */
+        }
+
+        #gwfCourses label {
+            margin-right: 10px; /* Space between label and checkbox */
         }
     </style>
 </head>
@@ -143,28 +140,28 @@
         <label for="gwfCourses">Good Work Foundation Courses Completed:</label>
         <div id="gwfCourses">
             <div>
-                <input type="checkbox" id="openLearning" name="gwfCourses" value="Open Learning Academy">
                 <label for="openLearning">Open Learning Academy</label>
+                <input type="checkbox" id="openLearning" name="gwfCourses" value="Open Learning Academy">
             </div>
             <div>
-                <input type="checkbox" id="bridgingYear" name="gwfCourses" value="Bridging Year Academy">
                 <label for="bridgingYear">Bridging Year Academy</label>
+                <input type="checkbox" id="bridgingYear" name="gwfCourses" value="Bridging Year Academy">
             </div>
             <div>
-                <input type="checkbox" id="itAcademy" name="gwfCourses" value="IT Academy">
                 <label for="itAcademy">IT Academy</label>
+                <input type="checkbox" id="itAcademy" name="gwfCourses" value="IT Academy">
             </div>
             <div>
-                <input type="checkbox" id="conservation" name="gwfCourses" value="Conservation Academy">
                 <label for="conservation">Conservation Academy</label>
+                <input type="checkbox" id="conservation" name="gwfCourses" value="Conservation Academy">
             </div>
             <div>
-                <input type="checkbox" id="hospitality" name="gwfCourses" value="Hospitality Academy">
                 <label for="hospitality">Hospitality Academy</label>
+                <input type="checkbox" id="hospitality" name="gwfCourses" value="Hospitality Academy">
             </div>
             <div>
-                <input type="checkbox" id="facilitator" name="gwfCourses" value="Facilitator Academy">
                 <label for="facilitator">Facilitator Academy</label>
+                <input type="checkbox" id="facilitator" name="gwfCourses" value="Facilitator Academy">
             </div>
         </div>
     </form>
